@@ -7,7 +7,7 @@ module.exports = {
         ...webpackConfig,
         output: {
           ...webpackConfig.output,
-          // filename: 'static/js/[name].[contenthash:8].js',
+          filename: 'static/js/[name].[contenthash:8].js',
         }
       }
     },
