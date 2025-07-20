@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+  display: flex;
+  width: 300px; /* 容器宽度小于子项总和 */
+}
+.item {
+  width: 150px; /* 3个子项共450px，超出容器150px */
+  height: 100px;
+}
+.item1 { flex-shrink: 1; background: red; }
+.item2 { flex-shrink: 2; background: green; } /* 收缩力度是item1的2倍 */
+.item3 { flex-shrink: 1; background: blue; }
+
+    /* 占1份 */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+</body>
+
+</html>
